@@ -10,14 +10,22 @@
 <body>
     <header>
         <h1>Barry's Beans</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
     <!--Main content-->
     <main>
+        <!-- Adding an on page link -->
+        <a href="#beanofday">Bean of the day</a>
         <!--article page can be used stand-alone-->
         <article>
             <h2>Our Story</h2>
             <!-- Adding an image -->
-            <img src="./Images/coffee-shop.jpg" alt="Full coffee cup with beans scattered about">
+            <img src="./images/coffee-shop.jpg" alt="Full coffee cup with beans scattered about">
             <p>
                 We are a <em>family owned business</em>. Barry is the <abbr title="Chief Executive Officer">CEO</abbr> and bean farmer. He is 1<sup>st</sup> in bean growing prowess
             </p>
@@ -51,7 +59,7 @@
             </ol>
         </section>
         <!-- adding a section for descriptive list -->
-        <section>
+        <section id="beanofday">
             <h3>Beans of the day</h3>
             <dl>
                 <dt>Lavazza</dt>
@@ -67,6 +75,8 @@
                     </ul>
                 </dd>
             </dl>
+            <!-- Adding an external link -->
+            <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank">We do treats too</a>
         </section>
     </main>
     <footer>
