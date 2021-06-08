@@ -1,0 +1,33 @@
+body{
+    font-family:fantasy;
+    font-size: 18px; 
+}
+.site-header, .site-footer {
+    background-color: #232D36;
+}
+.site-title{
+    color: #7798B4;
+}
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+article ul li{
+    list-style: square;
+}
+article ul li:nth-child(2n+1){
+    background-color: #DED9D6;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: #566D82;
+    border: 3px solid #232D36;
+    text-decoration: none;
+}
+nav ul a:hover,
+nav ul a:active{
+    background-color: #DED9D6;
+}
