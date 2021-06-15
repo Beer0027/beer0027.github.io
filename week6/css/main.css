@@ -1,6 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategrey;
+    /* Adding background image */
+    background-image: url(../images/white_brick_wall.png)
 }
 
 /*
@@ -31,7 +33,10 @@ body {
 
  /* Selecting element with id value */
 #beanofday{
-    background-color: orange;
+    /* color, image, repeat, positionX, positionY */
+    background: orange url(../images/bread.jpg) no-repeat;
+    background-size: cover;
+    color: white;
 }
 /* selecting hmtl elements with class name */
 .orange-link{
