@@ -44,7 +44,11 @@ body {
 }
 /* Direct child selector */
 article>p{
+    /*  CSS tpyography properties */
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: capitalize;  
 }
 /* Adjacent sibling selector */
 h3+ul{
