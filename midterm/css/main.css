@@ -46,8 +46,13 @@ body{
 	background: #AAD3CF;
 	padding-bottom:1rem;
 }
+html{
+	/* set base font size to 16px */
+	font-size: 16px; 
+}
 
 h1 {
+	/* heading centered in the header with position absolute so to stay above image in header */
 	color: white;
 	text-align:center;
 	font-size: 4rem;
@@ -57,6 +62,7 @@ h1 {
   transform: translate(-50%, -50%);
 }
 h2{
+	/* Positions heading for main content left. Makes font bigger and bold so to stand out as a title */
 	color: black;
 	text-align: left;
 	font-size: 2rem;
@@ -64,6 +70,7 @@ h2{
 	padding:1rem 0;
 }
 h3{
+	/* Positions heading left, Makes font bigger and bold so to stand out as a title */
 	color:black;
 	text-align: left;
 	font-size: 1.5rem;
@@ -73,39 +80,46 @@ h3{
 }
 
 h4 {
+	/* gives heading to question in contact section to stand out as question */
 	font-size: 1.3rem;
 	margin: 1rem 0 1.2rem 0;
 }
 
 li{
+	/* Makes bullet points solid black circles.Positioned to fit in container */
 	list-style:disc;
 	list-style-position: inside;
 }
 
 div.contact {
+	/* border settings for contact section of the page */
 	border:1px solid #000;
 	padding:20px;
 }
 
 div.contact .blocklabel {
+	/* makes the titles/requirements of the contact section to be above the form */
 	display:block;
 	font-size:1.1rem;
 	margin-bottom:0.25rem;
 }
 
 input.fullwidth {
+	/* makes input under name and email to be 100% width */
 	margin-bottom:0.75rem;
 	padding-bottom:0.5rem;
 	width: 100%;
 }
 
 textarea#message {
+	/* makes your message input size bigger and no adjustable by user */
 	padding-bottom:3rem;
 	resize: none;
 	width:100%;
 }
 
 button {
+	/* property settings for button in contact section */
 	background:none;
 	border:1px solid black;
 	font-size:0.7rem;
@@ -115,17 +129,20 @@ button {
 }
 
 div.container {
+	/* placing container on body and setting size and background  */
 	background: #D3E9E7;
 	max-width: 1200px;
     margin: 0 auto;
 }
 
 div.container main {
+	/* gives padding to first section of content */
 	padding:0.75rem;
 }
 
 
 img.floatimage {
+	/* float the img to the left of the container and adjust spacing of the image to other siblings */
 float:left;
 width:20%;
 margin-right:1rem;
@@ -133,33 +150,34 @@ margin-right:1rem;
 }
 
 p {
+	/* set paragraph font size and line height */
 	font-size:1.2rem;
 	line-height:1.5;
 }
-
-section {
-	clear:both;
-}
-
 .visit label {
+	/* sets font size for radiobutton labels  */
 	font-size:1.2rem;
 }
 footer {
+	/* adjust footer size and shift text to the right */
 	padding: 1rem 2rem 2rem 0;
 	text-align: right;
 
 }
 
 .header-container {
+	/* keeps the header position relative so it doesnt move with the webpage */
 	position: relative;
 }
 
 .header-container img {
+	/* makes image in header take the full width of the container it's in */
 	width:100%;
 }
 
 
 nav ul li {
+	/* puts the nav options beside eachother. Adds the black line between the options to separate them via border properties. Center the text and create suitable padding and size */
 	border-right: 1px solid black;
 	display: inline-block;
 	padding: 0.5rem 0;
@@ -168,11 +186,13 @@ nav ul li {
 }
 
 nav ul li:last-child {
+	/* makes it so the last option in the nav does follow the same border properties and the first two children. There is no need for another line because there isnt another category. */
 	border: none;
 }
 
 
 nav ul li a {
+	/* makes the anchor tag or the text in the nav black font color. Adjust the font size, removes text decoration and makes all letters of each word uppercase */
 	color:black;
 	font-size:1.5rem; 
 	text-decoration: none;
