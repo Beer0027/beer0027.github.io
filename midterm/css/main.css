@@ -166,7 +166,7 @@ footer {
 }
 
 .header-container {
-	/* keeps the header position relative so it doesnt move with the webpage */
+	/* keeps the header position relative so we can use position absolute on h1 inside the header */
 	position: relative;
 }
 
