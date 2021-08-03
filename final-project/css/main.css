@@ -138,97 +138,98 @@ table {
 * {
     box-sizing: border-box;
 }
-
+/* font open sans */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+/* increase line height to create more separations between lines */
 p {
     line-height: 1.5;
 }
 
 div.container {
-    max-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-
+/* style h1 and position on page */
 h1 {
     color: white;
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: bold;
 }
-
+/* style all h2 and margin bottom for spacing */
 h2 {
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 15px;
 }
-
+/* style all h3 and add margin on top and bottom */
 h3 {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 18px;
     margin: 15px 0;
 }
-
+/* style all h4 and add color to border bottom for line also position */
 h4 {
     font-weight: bold;
     font-size: 18px;
     margin: 15px 0;
-    border-bottom: 2px solid rgb(224, 179, 80);
+    border-bottom: 2px solid #c78b06;
     margin: 5px 20px 8px 20px;
     text-align: left;
 }
-
+/* make image full width */
 img {
     width: 100%;
 }
-
+/* add color and padding to nav section */
 nav {
     background-color: #222;
     padding: 10px;
 }
-
+/* make nav li items display side by side and centered */
 nav li {
     display: block;
     text-align: center;
     padding: 12px 0;
 }
-
+/* put logo on the left side of nav */
 nav li:first-child {
     text-align: left;
 }
-
+/* change color of nac items and remove underline */
 nav li a {
-    color: #C78B07;
+    color: #c78b06;
     text-decoration: none;
 }
-
+/* make color of nav li change when mouse hover */
 nav li:hover {
-    background-color: #C78B07;
+    background-color: #c78b06;
 }
-
+/* make nav li a change color when hover */
 nav li:hover a {
     color: #222;
 }
-
+/* change size of nav im and align left */
 nav img {
     width: 15%;
     text-align: left;
 }
-
+/* make search box inline and next to other nav items. adjust size */
 .search {
     display: inline-block;
     width: 93%;
 }
-
+/* adjust size and padding and margin for search box/icon */
 #yoursearch {
     width: 100%;
     padding: 6px;
     margin-bottom: 0;
 }
-
+/* add border to search icon, display inline, add padding, change size and align center */
 .magnifier {
-    border: 1px solid orange;
+    border: 1px solid #c78b06;
     display: inline-block;
     padding: 6px 0px;
     width: 5%;
@@ -236,18 +237,18 @@ nav img {
 }
 
 i.im-magnifier {
-    color: #C78B07;
+    color: #c78b06;
     vertical-align: middle;
     font-size: 12px;
     text-align: center;
 
 }
-
+/* change size of sections and center them on page */
 section {
     width: 90%;
     margin: 0 auto;
 }
-
+/* makes vision section and footer bigger than the other parts of the page */
 section.vision,
 footer {
     width: 100%;
@@ -257,19 +258,20 @@ section div.flex {
     margin: 0;
     padding: 0;
 }
-
+/* style the vision section */
 section.vision div {
     color: white;
     background-image: url("../images/vision.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 20px;
 }
-
+/* style vision button */
 section.vision button {
     background-color: rgb(0, 0, 0, .8)
 }
-
+/* style background image in welcome section */
 .banner {
     background-image: url("../images/main-banner.jpg");
     background-repeat: no-repeat;
@@ -278,7 +280,7 @@ section.vision button {
     padding: 20px 0;
 
 }
-
+/* style text in welcome section */
 .bannerinfo {
     background-color: rgb(0, 0, 0, .5);
     color: white;
@@ -290,26 +292,26 @@ section.vision button {
 }
 
 .bannerinfo button {
-    background-color: #C78B07;
+    background-color: #c78b06;
     color: black;
     margin: 0;
 }
-
+/* base style for all buttons */
 button {
     border: none;
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     padding: 20px 10px;
 }
-
+/* hover style for all buttons */
 button:hover {
-    border: 1px solid #C78B07;
+    border: 1px solid #c78b06;
 }
-
+/* adds margin bottom to all paragraphs */
 p {
     margin-bottom: 20px;
 }
-
+/* stlye about us section */
 #aboutus {
     background-color: #FFE6AC;
 }
@@ -321,19 +323,19 @@ p {
 section.flex-container section {
     width: 100%;
 }
-
+/* style all section divs to have same color and margin and padding */
 section div {
     background-color: #FFE6AC;
     margin-bottom: 15px;
     padding-bottom: 15px;
 }
-
+/* style all section div p h2 h3 to have left and right padding */
 section div p,
 section div h2,
 section div h3 {
     padding: 0px 20px;
 }
-
+/* stlye all section div buttons to have margin bottom and left margin */
 section div button {
     margin: 0 0 10px 20px;
     background: black;
@@ -344,20 +346,20 @@ section div button {
 section#team div h3 {
     margin-bottom: 0;
 }
-
+/* style send button in contact us section */
 button#send {
-    color: rgb(185, 130, 11);
+    color: #c78b06;
     padding: 6px 5px;
     margin: 10px 0 0 0;
 }
-
+/* style text input areas to be block, full width, and have margin bottom */
 input,
 textarea {
     display: block;
     width: 100%;
     margin-bottom: 10px;
 }
-
+/* make message area bigger and remove resize */
 textarea {
     padding-bottom: 120px;
     resize: none;
@@ -390,8 +392,8 @@ iframe {
 
 footer {
     background-color: #222;
-    color: rgb(185, 130, 11);
-    padding: 20px 0 10px 5px;
+    color: #c78b06;
+    padding: 20px 0 10px 20px;
 }
 
 span {
@@ -400,7 +402,7 @@ span {
 
 /* Desktop Layout */
 
-@media only screen and (min-width:1550px) {
+@media only screen and (min-width:760px) {
 
     h1 {
         font-size: 64px;
@@ -418,27 +420,26 @@ span {
 
     .nav-list {
         display: inline-block;
-        width: 82%;
+        width: 78%;
     }
 
     nav li {
         display: inline-block;
-        width: 16%;
+        width: 15%;
     }
 
     nav li:first-child {
-        width: auto;
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
     .search-container {
         display: inline-block;
-        width: 16%;
+        width: 20%;
     }
 
     .search {
         display: inline-block;
-        width: 80%;
+        width: 78%;
     }
 
     #yoursearch {
@@ -448,7 +449,7 @@ span {
     }
 
     .magnifier {
-        border: 1px solid orange;
+        border: 1px solid #c78b06;
         display: inline-block;
         padding: 6px 0;
         width: 18%;
@@ -456,7 +457,7 @@ span {
     }
 
     i.im-magnifier {
-        color: #C78B07;
+        color: #c78b06;
         vertical-align: middle;
         font-size: 16px;
         text-align: center;
@@ -484,7 +485,7 @@ span {
     }
 
     .bannerinfo button {
-        background-color: #C78B07;
+        background-color: #c78b06;
         color: black;
         margin: 0;
     }
@@ -497,6 +498,7 @@ span {
 
     #aboutus img {
         padding: 5px 0px 10px 80px;
+        display: none;
     }
 
     section div p,
@@ -558,8 +560,15 @@ span {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-content: flex-start;
-        align-items: center;
+        align-content: stretch;
+        align-items: stretch;
+        padding: 20px;
+    }
+    .flex-container-about div.half {
+        background-image: url("../images/about-us.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .flex-container-team {

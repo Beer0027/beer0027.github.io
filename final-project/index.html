@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- give class to entire website content for stlying -->
     <div class="container">
         <header>
             <!-- Nav Section -->
@@ -18,18 +19,21 @@
 
                 <ul class="nav-list">
                     <li><img src="./images/logo.png" alt="3 stars" /></li>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html" class="">About Us</a></li>
-                    <li><a href="index.html" class="">Services</a></li>
-                    <li><a href="index.html" class="">Team</a></li>
-                    <li><a href="index.html" class="">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#aboutus" class="">About Us</a></li>
+                    <li><a href="#servicelink" class="">Services</a></li>
+                    <li><a href="#team" class="">Team</a></li>
+                    <li><a href="#Contactus" class="">Contact</a></li>
                 </ul>
+                <!-- class for both search box and search icon  -->
                 <div class="search-container">
+                    <!-- class for search box -->
                     <div class="search">
                         <label for="yoursearch"></label>
                         <!-- make the icon a button that when clicked searches for results -->
                         <input type="text" name="yoursearch" id="yoursearch" placeholder="Search" value="Search">
                     </div>
+                    <!-- class for search icon -->
                     <div class="magnifier">
                         <i class="im im-magnifier"></i>
                     </div>
@@ -38,7 +42,8 @@
         </header>
         <main>
             <!-- Welcome Section -->
-            <section class="banner">
+            <section class="banner" id="home">
+                <!-- class banner info for for the content of the welcome section -->
                 <div class="bannerinfo">
                     <h1> Welcome to Three Star Media </h1>
                     <p>
@@ -49,11 +54,15 @@
                     <button>Connect with us&nbsp;&nbsp;&nbsp;<i class="im im-play"></i> </button>
                 </div>
             </section>
+            <!-- about us section -->
             <section>
+                <!-- class and id given to about us content -->
                 <div id="aboutus" class="flex-container-about">
+                    <!-- class given specifically to img in about for layout -->
                     <div class="half">
                         <img src="./images/about-us.jpg" alt="ping pong table">
                     </div>
+                    <!-- class given to text of about section for layout -->
                     <div class="almosthalf">
                         <h2>About Us</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur
@@ -67,10 +76,13 @@
                     </div>
                 </div>
             </section>
+            <!-- Services Section -->
             <section class="flex-container">
+                <!-- class for h2 for layout -->
                 <section class="full">
-                    <h2>Our Services</h2>
+                    <h2 id="servicelink">Our Services</h2>
                 </section>
+                <!-- class given to split section in half with marketing panel -->
                 <section class="half">
                     <div id="services">
                         <img src="./images/digital.jpg" alt="phone and laptop screens">
@@ -83,6 +95,7 @@
                         <button>Digital Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
                     </div>
                 </section>
+                <!-- class given to split section in half with digital panel -->
                 <section class="half">
                     <div id="marketing">
                         <img src="./images/marketing.jpg" alt="laptop screen with graphs">
@@ -96,38 +109,47 @@
                     </div>
                 </section>
             </section>
+            <!-- class given for layout -->
             <section class="flex-container">
-            <section class="third">
-                <div id="videoprod">
-                    <img src="./images/video.jpg" alt="phone screen on youtube">
-                    <h3>Video Production</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur perferendis
-                        magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis, explicabo
-                        illum animi iste cumque atque.</p>
-                    <button>Video Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
-                </div>
+                <!-- class third given to place video production, webdev, print next to eachother -->
+                <section class="third">
+                    <div id="videoprod">
+                        <img src="./images/video.jpg" alt="phone screen on youtube">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur
+                            perferendis
+                            magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis,
+                            explicabo
+                            illum animi iste cumque atque.</p>
+                        <button>Video Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
+                    </div>
+                </section>
+                <section class="third">
+                    <div id="Webdev">
+                        <img src="./images/web.jpg" alt="Phone screen and notepad">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur
+                            perferendis
+                            magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis,
+                            explicabo
+                            illum animi iste cumque atque.</p>
+                        <button>Web Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
+                    </div>
+                </section>
+                <section class="third">
+                    <div id="print">
+                        <img src="./images/print.jpg" alt="newspapers">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur
+                            perferendis
+                            magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis,
+                            explicabo
+                            illum animi iste cumque atque.</p>
+                        <button>Print Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
+                    </div>
+                </section>
             </section>
-            <section class="third">
-                <div id="Webdev">
-                    <img src="./images/web.jpg" alt="Phone screen and notepad">
-                    <h3>Web Developement</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur perferendis
-                        magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis, explicabo
-                        illum animi iste cumque atque.</p>
-                    <button>Web Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
-                </div>
-            </section>
-            <section class="third">
-                <div id="print">
-                    <img src="./images/print.jpg" alt="newspapers">
-                    <h3>Print</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur perferendis
-                        magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis, explicabo
-                        illum animi iste cumque atque.</p>
-                    <button>Print Plans&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
-                </div>
-            </section>
-        </section>
+            <!-- Our Vision Section -->
             <section class="vision">
                 <div id="vision">
                     <h3>Our Vision</h3>
@@ -137,85 +159,96 @@
                     <button>Learn More&nbsp;&nbsp;&nbsp;<i class="im im-play"></i></button>
                 </div>
             </section>
+            <!-- Our Team Section -->
             <section id="team" class="flex-container">
+                <!-- class given to position h2 -->
                 <section class="full">
-                <h2>Our Team</h2>
+                    <h2>Our Team</h2>
                 </section>
+                <!-- classes given to put img and corresponding text side by side -->
                 <section class="full">
-                <div class="flex-container-team">
-                    <img class="team-half" src="./images/john.jpg" alt="Picture of john doe">
-                    <div class="team-half">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur perferendis
-                        magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis, explicabo
-                        illum animi iste cumque atque.</p>
+                    <div class="flex-container-team">
+                        <img class="team-half" src="./images/john.jpg" alt="Picture of john doe">
+                        <div class="team-half">
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur
+                                perferendis
+                                magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis,
+                                explicabo
+                                illum animi iste cumque atque.</p>
+                        </div>
+
                     </div>
+                </section>
+                <!-- classes given to put img and corresponding text side by side in reserve order -->
+                <section class="full">
+                    <div class="flex-container-team">
+                        <img class="team-half reverse" src="./images/bob.jpg" alt="Picture of Bob Rite">
+                        <div class="team-half reverse">
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur
+                                perferendis
+                                magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis,
+                                explicabo
+                                illum animi iste cumque atque.</p>
+                        </div>
 
-                </div>
-            </section>
-            <section class="full">
-                <div class="flex-container-team">
-                    <img class="team-half reverse" src="./images/bob.jpg" alt="Picture of Bob Rite">
-                    <div class="team-half reverse">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus pariatur perferendis
-                        magnam labore, recusandae quasi eaque aliquam explicabo. Pariatur ut cum enim nobis, explicabo
-                        illum animi iste cumque atque.</p>
                     </div>
-
-                </div>
+                </section>
             </section>
-            </section>
-
+            <!-- Contact Us Section -->
             <section class="flex-container">
+                <!-- classes assign to elements of contact section for layout -->
                 <section class="full contactorder">
-                <h2>Contact Us</h2>
+                    <h2>Contact Us</h2>
                 </section>
                 <section class="truehalf contactorder">
-                <h3>Send Us a Message</h3>
-                <div id="Contactus">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" name="fullname" id="fullname">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                    <button id="send">Send</button>
-                </div>
-            </section>
-            <section class="full contactorder">
-                <h3>Hours of Operation</h3>
-                <div id="hoursofoperation">
+                    <h3>Send Us a Message</h3>
+                    <div id="Contactus">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" name="fullname" id="fullname">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <button id="send">Send</button>
+                    </div>
+                </section>
+                <!-- Hours of operation section -->
+                <section class="full contactorder">
+                    <h3>Hours of Operation</h3>
+                    <div id="hoursofoperation">
 
-                    <table>
-                        <thead>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Days</td>
+                                    <td>Hours</td>
+                                </tr>
+                            </thead>
                             <tr>
-                                <td>Days</td>
-                                <td>Hours</td>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
                             </tr>
-                        </thead>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </table>
-                </div>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <!-- Location Section with classes to change layout for desktop style -->
+                <section class="truehalf contactorder">
+                    <h3>Location</h3>
+                    <div id="location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.6204142990543!2d-75.75874681739768!3d45.34974744403608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1627841896226!5m2!1sen!2sca"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
             </section>
-            <section class="truehalf contactorder">
-                <h3>Location</h3>
-                <div id="location">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d833.6204142990543!2d-75.75874681739768!3d45.34974744403608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1627841896226!5m2!1sen!2sca"
-                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </section>
-        </section>
         </main>
         <footer>
             <p>&copy; Copyright Three Star Media, 2021</P>
