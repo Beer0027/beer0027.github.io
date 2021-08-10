@@ -198,7 +198,7 @@ nav li {
 nav li:first-child {
     text-align: left;
 }
-/* change color of nac items and remove underline */
+/* change color of nav items and remove underline */
 nav li a {
     color: #c78b06;
     text-decoration: none;
@@ -220,6 +220,7 @@ nav img {
 .search {
     display: inline-block;
     width: 93%;
+    margin-right: -5px;
 }
 /* adjust size and padding and margin for search box/icon */
 #yoursearch {
@@ -229,9 +230,8 @@ nav img {
 }
 /* add border to search icon, display inline, add padding, change size and align center */
 .magnifier {
-    border: 1px solid #c78b06;
     display: inline-block;
-    padding: 6px 0px;
+    /* padding: 6px 0px; */
     width: 5%;
     text-align: center;
 }
@@ -298,10 +298,13 @@ section.vision button {
 }
 /* base style for all buttons */
 button {
-    border: none;
+    border: 1px solid #c78b06;
+    background: none;
+    text-decoration: none;
     font-size: 18px;
     text-align: center;
-    padding: 20px 10px;
+    padding: 4.5px;
+    /* padding: 20px 10px; */
 }
 /* hover style for all buttons */
 button:hover {
@@ -364,13 +367,13 @@ textarea {
     padding-bottom: 120px;
     resize: none;
 }
-
+/* Contact Us Section */
 div#Contactus,
 div#hoursofoperation,
 div#location {
     background: white;
 }
-
+/* Hours of Operations table properties */
 table {
     width: 100%;
 }
@@ -389,7 +392,7 @@ iframe {
     width: 337.5px;
     height: auto;
 }
-
+/* footer section */
 footer {
     background-color: #222;
     color: #c78b06;
@@ -399,8 +402,49 @@ footer {
 span {
     text-decoration: underline;
 }
+.bannerinfo a {
+    background-color: #c78b06;
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+    text-align:center;
+    vertical-align: middle;
+}
+.blkbtn{
+    text-decoration: none;
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    vertical-align: middle;
+}
+section div p,
+    section div h2,
+    section div h3 {
+        padding: 10px;
+    }
 
-/* Desktop Layout */
+    .flex-container button {
+        width: 98%;
+        margin: 0 auto;
+        display: block;
+    }
+    .flex-container img{
+       margin: 0;
+       display: block; 
+    }
+    section div h2,
+    section div h3 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    section div button {
+        margin: 0
+    }
+
+/* ----------------------------Desktop Layout--------------------------------- */
 
 @media only screen and (min-width:760px) {
 
@@ -410,7 +454,7 @@ span {
     }
 
     nav {
-        padding: 30px 80px;
+        /* padding: 30px 80px; */
     }
 
     nav img {
@@ -419,22 +463,23 @@ span {
     }
 
     .nav-list {
-        display: inline-block;
-        width: 78%;
+        /* display: inline-block; */
+        /* width: 78%; */
     }
 
     nav li {
-        display: inline-block;
-        width: 15%;
+        flex: 1;
+        /* display: inline-block; */
+        /* width: 15%; */
     }
 
     nav li:first-child {
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .search-container {
-        display: inline-block;
-        width: 20%;
+        /* display: inline-block; */
+        /* width: 20%; */
     }
 
     .search {
@@ -449,9 +494,8 @@ span {
     }
 
     .magnifier {
-        border: 1px solid #c78b06;
         display: inline-block;
-        padding: 6px 0;
+        /* padding: 6px 0; */
         width: 18%;
         text-align: center;
     }
@@ -462,6 +506,11 @@ span {
         font-size: 16px;
         text-align: center;
 
+    }
+    /* should be able to use display: flex to distribute instead of manually settings the size */
+    .nav-list{
+        display: flex;
+        align-items: center;
     }
 
     .banner {
@@ -477,18 +526,14 @@ span {
     .bannerinfo {
         background-color: rgb(0, 0, 0, .5);
         color: white;
-        padding: 60px 0 10px 15px;
+        padding: 60px 10px 20px;
     }
 
     .bannerinfo p {
         padding: 0;
     }
 
-    .bannerinfo button {
-        background-color: #c78b06;
-        color: black;
-        margin: 0;
-    }
+   
 
     section {
         width: 100%;
@@ -501,26 +546,7 @@ span {
         display: none;
     }
 
-    section div p,
-    section div h2,
-    section div h3 {
-        padding: 10px;
-    }
-
-    .flex-container button {
-        width: 98%;
-        margin: 0 auto;
-        display: block;
-    }
-
-    section div h2,
-    section div h3 {
-        margin-left: 0;
-    }
-
-    section div button {
-        margin: 0
-    }
+    
 
     h2,
     h3 {
@@ -579,7 +605,7 @@ span {
         align-content: flex-start;
         align-items: center;
     }
-
+    /* Ordering content on page for various sections */
     div.flex-container-team {
         margin-bottom: 0;
         padding-bottom: 0;
@@ -660,4 +686,36 @@ span {
     button#send {
         width:auto;
     }
+    img{
+        width: 100%;
+      }
+      /* Team Section */
+      #team{
+        grid-template-areas:
+          "header header"
+          "pic1 info1"
+          "info2 pic2";
+        background-color: #FFE6AC;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        
+      }
+      #team .oteam{
+        grid-area: header;
+        background-color: white;
+      }
+      #team .johnpic{
+        grid-area: pic1;
+      }
+      #team .johninfo{
+        grid-area: info1;
+      }
+      #team .bobpic{
+        grid-area: pic2;
+      }
+      #team .bobinfo{
+        grid-area: info2;
+      }
+      
 }
